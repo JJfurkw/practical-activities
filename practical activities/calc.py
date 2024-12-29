@@ -13,7 +13,7 @@ def divisao(x, y):
     return x / y
 
 def menu():
-    print("Selecione a operação:")
+    print("\nSelecione a operação:")
     print("1. Soma")
     print("2. Subtração")
     print("3. Multiplicação")
@@ -21,10 +21,10 @@ def menu():
 
 while True:
     menu()
-    escolha = input("Digite sua escolha (1/2/3/4): ")
+    escolha = input("Digite sua escolha (1/2/3/4):  \n")
 
     if escolha in ['1', '2', '3', '4']:
-        num1 = float(input("Digite o primeiro número: "))
+        num1 = float(input("\nDigite o primeiro número: "))
         num2 = float(input("Digite o segundo número: "))
 
         if escolha == '1':
@@ -36,8 +36,8 @@ while True:
         elif escolha == '4':
             print(f"Resultado: {divisao(num1, num2)}")
     else:
-        print("Escolha inválida")
+        print("==================\n  •Escolha inválida• \n==================\n")
 
-    continuar = input("Deseja realizar outra operação? (s/n): ")
+    continuar = input("Deseja realizar outra operação? (s/n):   \n")
     if continuar.lower() != 's':
         break
